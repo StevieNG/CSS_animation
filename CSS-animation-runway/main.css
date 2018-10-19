@@ -1,0 +1,175 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.grass, .sky, .road {
+    position: relative;
+}
+
+.sky{
+    height: 30%;
+    background: rgb(110, 202, 238);
+}
+
+.field{
+    height: 10%;
+    background: seagreen 50% 0 url(../img/tree.png) repeat;
+  
+
+}
+
+
+.field:nth-child(5){
+    height:10%;
+    background: seagreen 50% 0 url(../img/bush.png) repeat;
+
+}
+
+.field:nth-child(3){
+    height:5%;
+    background: seagreen;
+
+}
+
+
+
+.runway{
+height: 20%;
+background: gray;
+box-sizing: border-box;
+border-bottom: 10px solid rgb(185, 168, 168);
+border-top: 10px solid  rgb(185, 168, 168);
+
+}
+
+.line1{
+    box-sizing: border-box;
+    border: 5px dashed whitesmoke;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 49%;
+}
+.line2{
+    box-sizing: border-box;
+    border: 5px dashed whitesmoke;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+}
+
+
+
+.cloud{
+    position: absolute;
+    animation-fill-mode: both;
+}
+
+.cloud:nth-child(1){
+    width: 200px;
+    top: 10px;
+    left: 600px;
+    opacity: 0.5;
+    animation-fill-mode: both;
+    animation: wind 10s linear infinite forwards;*/
+}
+
+.cloud:nth-child(2){
+    width: 130px;
+    top: 30px;
+    left: 400px;
+    opacity: 1;
+    animation-fill-mode: both;
+    animation: wind 40s linear infinite forwards;*/
+}
+.cloud:nth-child(3){
+    width: 600px;
+    top: -200px;
+    left: 0px;
+    opacity: 0.8;
+    animation-fill-mode: both;
+    animation: wind 50s linear infinite forwards;
+}
+
+.cloud:nth-child(4){
+
+    width: 200px;
+    top:    100px;
+    left:   1000px;
+    opacity: 1;
+    animation: windmore 2s linear infinite alternate-reverse;
+    
+}
+
+.benji{
+position: absolute;
+left: 40px;
+top: 560px;
+animation: taxi 5s both ease-in infinite, takeoff 5s linear infinite;
+}
+
+.jane{
+    position: absolute;
+    left: 0px;
+    top:80px;
+    width: 100px;
+    animation: travel 8s both ease-in-out reverse infinite, landing 8s forwards linear infinite ;
+    }
+
+
+
+
+
+
+@keyframes wind{
+    from{left: -300px}
+    to{left:1600px}
+    
+}
+
+@keyframes taxi{
+    from{transform: translateX(0px)}
+    to{transform: translateX(1800px)};
+}
+
+
+
+@keyframes takeoff{
+    
+    0%{top:560px}
+    20%{top:560px}
+    40%{top:560px}
+    70%{top:560px}
+    85%{top:300px}
+    100%{top:80px}}
+
+
+    @keyframes travel{
+        from{transform: translateX(50px)}
+        to{transform: translateX(1800px)};
+    }
+
+
+    @keyframes landing{
+    
+        0%{top:80px}
+        20%{top:200px}
+        40%{top:300px}
+        60%{top:370px}
+        65%{top:300px}
+        75%{top:370px}
+        90%{top:370px}
+        100%{top:370px}}
+
+    @keyframes windmore{
+        
+            from{transform: translateX(100px)}
+            to{transform: translateX(0px)};
+
+        
+
+    }
