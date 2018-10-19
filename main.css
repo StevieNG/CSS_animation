@@ -16,7 +16,7 @@ html, body{
 
 .field{
     height: 10%;
-    background: seagreen 50% 0 url(../img/tree.png) repeat;
+    background: seagreen 50% 0 url(img/tree.png) repeat;
   
 
 }
@@ -24,7 +24,7 @@ html, body{
 
 .field:nth-child(5){
     height:10%;
-    background: seagreen 50% 0 url(../img/bush.png) repeat;
+    background: seagreen 50% 0 url(img/bush.png) repeat;
 
 }
 
